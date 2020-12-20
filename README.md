@@ -7,4 +7,4 @@ Showcase of the work done my me. Work includes general show case of projects I h
 ![Screenshot of site](./assets/images/Kevin-Port.png)
 
 ## Link
-https://kevintulakyan.github.io/Kevin-Portfolio-Week-2-challenge/
+https://kevintulakyan.github.io/Kevin-Portfolio-Week-2-Challenge/
