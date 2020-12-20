@@ -1,0 +1,326 @@
+
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }
+header{
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    background-image: url("../images/code.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 46px;
+    color: black;
+    margin: 0;
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    text-shadow: 0 0 10px rgb(248, 180, 180, 0.7);
+    color: rgb(20, 168, 212);
+}
+header nav {
+    float: right;
+    margin: 0 0;
+}
+
+header nav {
+    margin: 7px 0;
+}
+header nav ul   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    text-shadow: 0 0 10px rgb(248, 180, 180, 0.7);
+}
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color:var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color:lightgrey;
+   }
+.heading{
+    padding: 5px 5px;
+    background-color: yellowgreen;
+    display: flex;
+    background-image: url("../images/code.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;   
+}
+.heading h2{
+    color: rgb(20, 168, 212);
+    font-size: 80px;
+    text-shadow: 0 0 10px rgb(248, 180, 180, 0.7);
+    position: absolute;
+    bottom: 1%;
+    right: 50px;
+    background: lightgrey;
+    border-radius: 15px;
+}
+  
+.grid-container{
+    background: lightgrey;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0px, 200px) 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+.grid-container2{
+    background: lightgrey;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px repeat(4, 8fr);
+    column-gap: 10px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.grid-item{
+    padding: 5px 0;
+    border-right: 5px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.body div a{
+    text-decoration: none;
+    background: goldenrod;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.grid-container2 div{
+    height: 350px;
+    gap: 5px;
+    background-color: lightgray;
+}
+.run{
+    background: white;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+    background-image: url("../images/run-buddy.PNG");
+}
+.over:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.text img{
+    float: left;
+    height: 80%;
+    padding: 20px;
+}
+.port{
+    text-shadow: none;
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-image: url("../images/Port.PNG");
+}
+.later{
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-image: url("../images/images.jpg");
+}
+.info ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.info ul li{
+    padding: 10px 15px;
+    font-weight: lighter; 
+    font-size: .9vw;
+    text-shadow: 0 0 10px rgb(248, 180, 180, 0.7);
+}
+.info ul li a{
+    font-weight: bold;
+    padding: 15px;
+    color: black;
+    border-bottom: 5px solid var(--secondary-color);
+    display: flex;
+    text-decoration: none;
+}
+.info a:hover {
+    background: var(--primary-color);
+    color:var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+.contact{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+}
+.contact-2{
+    text-align: inherit;
+    padding: 40.48px;
+    border-right: 5px solid var(--secondary-color);
+}
+
+.grid-head{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    header h1{
+        width: 100%;
+        text-align: center;
+      }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    header nav ul li a{
+        font-size: 20px;
+      }
+    .text{
+        height: 80%;
+    }
+    .text img{
+        float: left;
+        height: 35%;
+        padding: 20px;
+    }
+    .text p{
+        font-size: 21px;
+    }
+    .grid-container{
+        display: flex;
+    }
+    .grid-container2{
+        column-gap: 40px;
+        display: flex;
+        margin: 7.5px;
+    }
+    .grid-item{
+        margin: 8.8px;
+        padding: 5px;
+        display: center;
+    }
+    .contact{
+        display: flex;
+        font-size: 14.19px;
+    }
+    .contact div{
+        float: center;
+    }
+    .contact-2 {
+        padding: 0px;
+    }
+    .info a{
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .body div{
+        height: 180px;
+    }
+    .about div{
+        height: 350px;
+    }
+
+}
+@media screen and (max-width: 575px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    .text{
+        height: 80%;
+    }
+    .text img{
+        float: left;
+        height: 20%;
+        padding: 20px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+    .grid-container{
+        display: flex;
+        height: 200px;
+    }
+    .grid-container2{
+        column-gap: 10px;
+        display: flex;
+        margin: 8px;
+    }
+    .grid-item{
+        padding: 5px;
+        display: center;
+    }
+    .contact{
+        display: flex;
+        font-size: 14.19px;
+    }
+    .contact div{
+        float: center;
+    }
+    .contact-2 {
+        padding: 5.5px;
+    }
+    .info a{
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .body div{
+        height: 195px;
+    }
+    .about div{
+        height: 400px;
+    }
+}
+    
