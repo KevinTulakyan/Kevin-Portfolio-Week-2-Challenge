@@ -101,7 +101,6 @@ body{
     align-items: center;
     font-size: 1.5rem;
 }
-
 .grid-item{
     padding: 5px 0;
     border-right: 5px solid var(--secondary-color);
@@ -109,6 +108,9 @@ body{
     justify-content: center;
     align-items: center;
     text-align: left;
+}
+.title{
+    grid-row: 1/span 2;
 }
 .body div a{
     text-decoration: none;
@@ -127,6 +129,13 @@ body{
     position: relative;
     object-fit: cover;
     background-image: url("../images/run-buddy.PNG");
+}
+.musix{
+    background: white;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+    background-image: url("../images/musix.PNG");
 }
 .over:hover{
     cursor: pointer;
@@ -151,6 +160,15 @@ body{
     background-position: center;
     background-image: url("../images/images.jpg");
 }
+.robert{
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-image: url("../images/images.jpg");
+    grid-column: 2;
+    grid-row: 2;
+}
+
 .info ul{
     display: flex;
     flex-wrap: wrap;
