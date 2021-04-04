@@ -137,6 +137,13 @@ body{
     object-fit: cover;
     background-image: url("../images/musix.PNG");
 }
+.bloc{
+    background: white;
+    background-position: center;
+    position: relative;
+    object-fit: cover;
+    background-image: url("../images/Bloc.PNG");
+}
 .over:hover{
     cursor: pointer;
     border-radius: 15px;
